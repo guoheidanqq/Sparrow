@@ -18,9 +18,18 @@
     <ClInclude Include="src\test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SparrowApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparrowApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
