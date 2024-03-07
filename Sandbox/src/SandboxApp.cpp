@@ -10,6 +10,7 @@
 #pragma once
 #include <stdio.h>
 #include "..\..\Sparrow\src\EntryPoint.h"
+//#pragma comment(lib, "Sparrow.lib") 
 //extern Sparrow::SparrowApplication* CreateApp();
 //namespace Sparrow {
 //	__declspec(dllimport) void sayhello();
