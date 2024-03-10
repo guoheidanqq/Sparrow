@@ -1,4 +1,5 @@
 #include "SparrowApplication.h"
+
 namespace Sparrow {
 
 
@@ -25,6 +26,8 @@ namespace Sparrow {
 	{
 		while (true) {
 			//printf("\n\n--------begin frame------\n");
+			//SparrowLog::GetInstance().getSparrowLogger()->info("running\n");
+			SP_INFO("running\n");
 			//Tick();
 		}
 	}

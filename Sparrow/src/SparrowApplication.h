@@ -6,6 +6,7 @@
 #endif
 
 #include <stdio.h>
+#include "SparrowLog.h"
 namespace  Sparrow {
 	class SP_API SparrowApplication
 	{

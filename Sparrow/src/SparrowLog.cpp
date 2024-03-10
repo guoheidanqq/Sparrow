@@ -1,6 +1,6 @@
 #include "SparrowLog.h"
 namespace Sparrow {
-
+	
 	SparrowLog::SparrowLog()
 	{
 		spdlog::set_pattern("%^[%T] %n: %v %$");
@@ -9,6 +9,12 @@ namespace Sparrow {
 		clientFileLogger = spdlog::basic_logger_mt("clientFilelogger","../x64/Debug/clientlog.txt");
 		spFileLogger = spdlog::basic_logger_mt("spfilelogger","../x64/Debug/splog.txt");
 		
+	}
+
+	SparrowLog& SparrowLog::GetInstance()
+	{
+		// TODO: insert return statement here
+		return SparrowLog::logger;
 	}
 
 	std::shared_ptr<spdlog::logger>& SparrowLog::getClientLogger()
@@ -38,5 +44,6 @@ namespace Sparrow {
 	SparrowLog::~SparrowLog()
 	{
 	}
+	SparrowLog   SparrowLog::logger;
 
 }
