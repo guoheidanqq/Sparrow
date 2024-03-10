@@ -1,21 +1,25 @@
 #pragma once
-#include <stdio.h>
-
 #ifdef SPARROW_DLLEXPORT
-	#define SP_API  __declspec(dllexport)
+#define SP_API  __declspec(dllexport)
 #else
-	#define SP_API __declspec(dllimport)
+#define SP_API __declspec(dllimport)
 #endif
 
+#include <stdio.h>
 namespace  Sparrow {
 	class SP_API SparrowApplication
 	{
 	public:
 		SparrowApplication();
-		~SparrowApplication();
+		virtual ~SparrowApplication();
 	public:
+		void RenderTick();
+		void LogicTick();
 		void Tick();
+		void Run();
 	};
+	// to be defined in client
+	int hello();
 
 	SparrowApplication* CreateApp();
 }

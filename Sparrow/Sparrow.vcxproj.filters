@@ -24,12 +24,18 @@
     <ClInclude Include="src\SparrowApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\SparrowLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\SparrowApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparrowLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

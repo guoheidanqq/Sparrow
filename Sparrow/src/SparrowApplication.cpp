@@ -11,9 +11,28 @@ namespace Sparrow {
 	{
 	}
 
+	void SparrowApplication::RenderTick()
+	{
+		printf("Render tick\n");
+	}
+
+	void SparrowApplication::LogicTick()
+	{
+		printf("Logic tick\n");
+	}
+
+	void SparrowApplication::Run()
+	{
+		while (true) {
+			//printf("\n\n--------begin frame------\n");
+			//Tick();
+		}
+	}
+
 	void SparrowApplication::Tick()
 	{
-		printf("Sparrow is running!\n");
+		LogicTick();
+		RenderTick();
 	}
 
 }

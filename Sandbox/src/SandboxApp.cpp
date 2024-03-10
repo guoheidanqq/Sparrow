@@ -1,44 +1,11 @@
-//#include ".\..\..\Sparrow\src\test.h"
-//#pragma comment(lib, "Sparrow.lib")  
-
-//namespace Sparrow {
-//	__declspec(dllimport) void sayhello();
-//
-//}
-//#pragma comment(lib, "Sparrow.lib") 
-
 #pragma once
-#include <stdio.h>
-#include "..\..\Sparrow\src\EntryPoint.h"
-//#pragma comment(lib, "Sparrow.lib") 
-//extern Sparrow::SparrowApplication* CreateApp();
-//namespace Sparrow {
-//	__declspec(dllimport) void sayhello();
-//	class __declspec(dllimport) SparrowApplication
-//	{
-//	public:
-//		SparrowApplication();
-//		~SparrowApplication();
-//	public:
-//		void Tick();
-//	};
-//
-//	
-//
-//}
-
+#pragma comment(lib, "Sparrow.lib")
+#include "SparrowApplication.h"
+#include "EntryPoint.h"
 
 class SanboxApp : public Sparrow::SparrowApplication {
 public:
 	SanboxApp() {
-	}
-
-	void Run() {
-		while (true) {
-			this->Tick();
-
-		}
-
 	}
 
 	~SanboxApp() {
@@ -48,8 +15,19 @@ public:
 };
 
 
-Sparrow::SparrowApplication* CreateApp() {
+
+int  Sparrow::hello() {
+	printf("hello \n");
+	return 1;
+}
+
+
+
+Sparrow::SparrowApplication* Sparrow::CreateApp() {
 	Sparrow::SparrowApplication* app = new SanboxApp();
+	app->Run();
 	return app;
 
 }
+
+
