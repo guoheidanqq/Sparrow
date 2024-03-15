@@ -1,3 +1,6 @@
 [submodule "ThirdPartySuppliers/spdlog"]
 	path = ThirdPartySuppliers/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "ThirdPartySuppliers/glfw"]
+	path = ThirdPartySuppliers/glfw
+	url = https://github.com/glfw/glfw
