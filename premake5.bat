@@ -1,0 +1,2 @@
+call ThirdPartySuppliers\premake\premake5 vs2017
+pause
