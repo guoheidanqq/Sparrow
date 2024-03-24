@@ -5,8 +5,10 @@
 #else
 #define SP_API __declspec(dllimport)
 #endif
+#include "Event.h"
 
 #include <iostream>
+#include <functional>
 namespace Sparrow {
 
 
@@ -21,14 +23,17 @@ namespace Sparrow {
 	class SP_API Window {
 
 	public:
+		//using EventHandlerType = std::function<void(Event&)>;
 		Window();
 		virtual ~Window();
 
-		virtual void OnUpdate() = 0;		
-		virtual void OnInit() = 0;
-		virtual void OnShutdown() = 0;
+		virtual void Update() = 0;		
+		virtual void Init() = 0;
+		virtual void Shutdown() = 0;
 		virtual int GetWidth() = 0;
 		virtual int GetHeight() = 0;
+		virtual void SetEventHandler(std::function<void(Event&)>& handler) = 0;
+		virtual void WindowPollEvent() = 0;
 		static Window* Create(const WindowProps& props = WindowProps());
 
 

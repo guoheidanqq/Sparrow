@@ -140,6 +140,10 @@
   <ItemGroup>
     <ClCompile Include="src\GLFWMain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdPartySuppliers\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="..\ThirdPartySuppliers\glfw\include\GLFW\glfw3native.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

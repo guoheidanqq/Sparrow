@@ -204,8 +204,12 @@ project "Sandbox"
 	includedirs 
 	{
 	"ThirdPartySuppliers/spdlog/include",
+	"ThirdPartySuppliers/glfw/include",
+	"ThirdPartySuppliers/glad/include", 
+	"ThirdPartySuppliers/imgui/src",
 	"Sparrow/src"
 	}
+
 
 	filter "system:windows"
 		cppdialect "C++17"		

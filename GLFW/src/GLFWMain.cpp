@@ -3,6 +3,14 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+
+void mousemove_handler(GLFWwindow* window, double xpos, double ypos) {
+	// mouse x: xpos 
+	// mouse y: ypos
+
+	std::cout << xpos << ", " << ypos << std::endl;
+}
+
 int main() {
 	GLFWwindow* window;
 
@@ -17,6 +25,12 @@ int main() {
 		glfwTerminate();
 		return -1;
 	}
+
+
+	//bind event 
+	glfwSetCursorPosCallback(window, mousemove_handler);
+
+
 
 	/* Make the window's context current */
 	glfwMakeContextCurrent(window);
@@ -43,7 +57,7 @@ int main() {
 		/* Poll for and process events */
 		glfwPollEvents();
 	}
-
+	
 	glfwTerminate();
 
 

@@ -139,16 +139,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\EntryPoint.h" />
+    <ClInclude Include="src\Event.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\KeyEvent.h" />
+    <ClInclude Include="src\MouseEvent.h" />
     <ClInclude Include="src\SparrowApplication.h" />
     <ClInclude Include="src\SparrowLog.h" />
     <ClInclude Include="src\Window.h" />
+    <ClInclude Include="src\WindowsInput.h" />
     <ClInclude Include="src\WindowsWindow.h" />
     <ClInclude Include="src\test.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Event.cpp" />
+    <ClCompile Include="src\KeyEvent.cpp" />
+    <ClCompile Include="src\MouseEvent.cpp" />
     <ClCompile Include="src\SparrowApplication.cpp" />
     <ClCompile Include="src\SparrowLog.cpp" />
     <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\WindowsInput.cpp" />
     <ClCompile Include="src\WindowsWindow.cpp" />
     <ClCompile Include="src\test.cpp" />
   </ItemGroup>
