@@ -135,6 +135,12 @@ namespace Sparrow {
 
 	}
 
+	void * WindowsWindow::GetNativeWindow()
+	{
+		
+		return (void*)this->window;
+	}
+
 	void WindowsWindow::MousePosCallback(GLFWwindow * window, double xpos, double ypos)
 	{
 		

@@ -141,6 +141,7 @@
     <ClInclude Include="src\EntryPoint.h" />
     <ClInclude Include="src\Event.h" />
     <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\DeviceCodes.h" />
     <ClInclude Include="src\KeyEvent.h" />
     <ClInclude Include="src\MouseEvent.h" />
     <ClInclude Include="src\SparrowApplication.h" />

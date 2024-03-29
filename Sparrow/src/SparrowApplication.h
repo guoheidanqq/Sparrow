@@ -24,10 +24,15 @@ namespace  Sparrow {
 		void Run();
 
 		void WindowEventHandler(Event& event);
-	
+		inline Window& GetAppWindow() {
+			return (*app_window);
+		}
+		
+		static SparrowApplication& GetInstance();
 
 	private:
 		std::unique_ptr<Window> app_window;
+		static SparrowApplication* app;
 
 	};
 	// to be defined in client

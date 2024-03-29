@@ -34,6 +34,7 @@ namespace Sparrow {
 		virtual int GetHeight() = 0;
 		virtual void SetEventHandler(std::function<void(Event&)>& handler) = 0;
 		virtual void WindowPollEvent() = 0;
+		virtual void* GetNativeWindow() = 0;
 		static Window* Create(const WindowProps& props = WindowProps());
 
 

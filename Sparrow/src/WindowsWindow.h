@@ -34,6 +34,7 @@ namespace Sparrow {
 
 		void SetGLFWCallback(); 
 		void WindowPollEvent() override;
+		virtual void* GetNativeWindow() override;
 
 		
 
